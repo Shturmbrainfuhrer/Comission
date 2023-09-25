@@ -8,6 +8,7 @@ const val ERROR_LIMIT_EXCEEDED = -2.0
 
 fun main() {
     println(comission(80_000, TYPE_MASTERCARD));
+    println(comission(5000, "UnknownType"))
 }
 
 fun comission(transfer: Int, typeCard: String = TYPE_VKPAY, previous: Int = 0): Double {
